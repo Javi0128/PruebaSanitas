@@ -15,7 +15,7 @@ describe('ImagesService', () => {
   });
 
   it('should return array', () => {
-    const images = service.getRandomImagesArray();
+    const images = service.getRandomImages();
     expect(images).toBeTruthy();
   });
 });

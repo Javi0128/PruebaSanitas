@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Image } from '../models/image.interface';
 import { LoremIpsumService } from './lorem-ipsum.service';
 
@@ -12,7 +13,7 @@ export class ImagesService {
 
   constructor(private loremIpsumService: LoremIpsumService) { }
 
-  getRandomImagesArray(): Image[] {
+  getRandomImages(): Observable<Image[]> {
     const allImagesList = [];
 
     for (let element = 0; element < this.numberOfElements; element++) {
@@ -27,6 +28,6 @@ export class ImagesService {
       allImagesList.push(image);
     }
 
-    return allImagesList;
+    return of(allImagesList);
   }
 }

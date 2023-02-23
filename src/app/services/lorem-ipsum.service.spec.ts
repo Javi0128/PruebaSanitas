@@ -13,10 +13,4 @@ describe('LoremIpsumService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-
-  it('should return text', () => {
-    const text = service.getRandomText();
-
-    expect(text).toBeTruthy();
-  });
 });

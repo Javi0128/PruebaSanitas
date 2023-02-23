@@ -2,10 +2,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'app-filter',
-  templateUrl: './filter.component.html',
+  selector: 'app-filter-input',
+  templateUrl: './filter-input.component.html',
 })
-export class FilterComponent implements OnInit {
+export class FilterInputComponent implements OnInit {
 
   @Output() textChange = new EventEmitter();
 
@@ -19,7 +19,7 @@ export class FilterComponent implements OnInit {
     if (this.filterForm) {
       this.filterForm?.get('imageFilter')?.valueChanges
       .subscribe(text => {
-        this.textChange.emit(text);
+          this.textChange.emit(text);
       })
     }
   }
