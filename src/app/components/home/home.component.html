@@ -1,0 +1,9 @@
+<app-filter (textChange)="filterChange($event)"></app-filter>
+<div class="d-flex flex-wrap justify-content-between container mx-auto">
+  <div class="card mb-5" style="width: 18rem;" *ngFor="let image of imagesList;">
+    <img [src]="image.photo" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">{{ image.text }}</p>
+    </div>
+  </div>
+</div>
