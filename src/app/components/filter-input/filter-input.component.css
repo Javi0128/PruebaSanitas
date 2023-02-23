@@ -1,0 +1,11 @@
+#filterInput{
+  background-color: gainsboro;
+}
+
+#filterInput:focus{
+  background-color: gray;
+}
+
+#filterInput:focus::placeholder{
+  color: white;
+}

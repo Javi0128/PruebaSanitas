@@ -1,0 +1,11 @@
+
+.card:hover {
+  color: white;
+  background-color: var(--bs-body-color);
+  padding: 20px;
+}
+
+.card {
+  padding: 5px;
+  transition-duration: 0.8s;
+}
