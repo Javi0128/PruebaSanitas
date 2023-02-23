@@ -1,0 +1,12 @@
+.input-style{
+  background-color: gainsboro;
+
+  &:focus{
+    background-color: gray;
+  }
+
+  &:focus::placeholder{
+    color: white;
+  }
+}
+
